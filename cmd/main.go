@@ -23,7 +23,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/", getAlbums)
 
-	router.Run(":8080")
+	router.Run(":4000")
 }
 
 func getAlbums(c *gin.Context) {
