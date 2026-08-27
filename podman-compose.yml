@@ -1,5 +1,7 @@
 services:
   go-testing:
+    image: localhost/go-testing:latest
+
     build:
       context: .
       dockerfile: Dockerfile
