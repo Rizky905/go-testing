@@ -1,10 +1,10 @@
 services:
-  be-go:
+  go-testing:
     build:
       context: .
       dockerfile: Dockerfile
 
-    container_name: be-go
+    container_name: go-testing
 
     restart: unless-stopped
 
