@@ -35,7 +35,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build \
     -o /app/server \
-    ./cmd/api/main.go
+    ./cmd/main.go
 
 
 # Runtime stage
