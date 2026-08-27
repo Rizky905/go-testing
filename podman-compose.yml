@@ -1,0 +1,22 @@
+services:
+  be-go:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: be-go
+
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    expose:
+      - "4000"
+
+    networks:
+      - rizkye-app-network
+
+networks:
+  rizkye-app-network:
+    external: true
